@@ -1,0 +1,24 @@
+img {
+	width:100px; /* you can use % */
+    height: 100px;
+}
+
+#welcome {
+	vertical-align: middle;
+	font-family: "Courier New";
+}
+
+.banner {
+	position: fixed;
+  	top: 35%;
+  	left: 8%;
+  	margin-top: -50px;
+  	margin-left: -100px;
+  	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+	font-family: "Courier New";
+}
