@@ -10,7 +10,6 @@ img {
 a {
 	text-decoration: none;
 	font-family: "Courier New";
-	color: black;
 }
 
 p {
@@ -27,7 +26,7 @@ p {
 }
 
 #banner {
-	border-bottom: 2px #CC0000 solid;
+	border-bottom: 1px red solid;
 }
 
 #welcome {
@@ -35,4 +34,3 @@ p {
 	text-align: center;
 	font-family: "Courier New";
 }
-
