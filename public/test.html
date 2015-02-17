@@ -18,58 +18,43 @@
     <![endif]-->
   </head>
   <body>
-    <!--
     <div class="container">
-      <div class="row vertical-center-row">
-          <div class="col-lg-12">text
-              <div class="row ">
-                <div class="col-xs-4 col-xs-offset-4" style="background:red;color:white">TEXT</div>
-              </div>
-          </div>
+      <div class="header"><span>Expand</span>
       </div>
-    </div> -->
-    <!--
-    <p>Welcome! My name is Andrew.</p>
-    <p>I'm a gymnast pursuing a symbolic systems major</p>
-    <p>at stanford university.</p> -->
-    <div class="container">
-      <div class="row vertical-center-row">
-          <div class="col-lg-12">
-              
-                  <div>
-                            <div class="row" id="banner" >
-                              <p class="col-md-1"></p>
-                              <img src="chicago.svg" class="col-md-2">
-                              <img src="stanford.svg" class="col-md-2">
-                              <p class="col-md-2" id="welcome">hi, my name is andrew.</p>
-                              <img src="stanford.svg" class="col-md-2">
-                              <img src="chicago.svg" class="col-md-2">
-                              <p class="col-md-1"></p>
-                            </div>
-
-                            <div class="row">
-                              <p class="col-md-2">Learn more:</p>
-                              <a class="col-md-2">bio</a>
-                              <a class="col-md-2">gymnastics</a>
-                              <a class="col-md-2">resume</a>
-                              <a class="col-md-2">jounalism</a>
-                              <a class="col-md-2">music</a>
-                            </div>
-
-                  </div>
-              
-          </div>
+      <div class="content">
+          <ul>
+              <li>This is just some random content.</li>
+              <li>This is just some random content.</li>
+              <li>This is just some random content.</li>
+              <li>This is just some random content.</li>
+          </ul>
       </div>
     </div>
-
-
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      var main = function() {
+        $(".header").click(function () {
+            $header = $(this);
+            //getting the next element
+            $content = $header.next();
+            //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+            $content.slideToggle(500, function () {
+              //execute this after slideToggle is done
+              //change text of header based on visibility of content div
+              $header.text(function () {
+                  //change text based on condition
+                  return $content.is(":visible") ? "Collapse" : "Expand";
+              });
+            });
+          });
+      }
+      $(document).ready(main)
+
+    </script>
   </body>
 </html>

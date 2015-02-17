@@ -1,36 +1,7 @@
-html, body, .container {
-    height: 100%;
-}
-
-img {
-	width:100px; /* you can use % */
-    height: 100px;
-}
-
-a {
-	text-decoration: none;
-	font-family: "Courier New";
-}
-
-p {
-	font-family: "Courier New";
-}
-
 .container {
-    display: table;
-    vertical-align: middle;
+    width:100%;
+    border:1px solid #d3d3d3;
 }
-.vertical-center-row {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#banner {
-	border-bottom: 1px red solid;
-}
-
-#welcome {
-	font-size: 20px;
-	text-align: center;
-	font-family: "Courier New";
+.container div {
+    width:100%;
 }
