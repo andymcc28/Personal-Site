@@ -1,5 +1,5 @@
 html, body, .container {
-    height: 87%;
+    height: 80%;
     /*position: fixed;
     left: 3%;*/
 }
@@ -19,6 +19,16 @@ p {
 	font-family: "Courier New";
 }
 
+.symbols {
+	width: 40px;
+	height: 40px;
+}
+
+a:hover {
+	color: #cc6600;
+	cursor: pointer;
+}
+
 .container {
     display: table;
     vertical-align: middle;
@@ -36,44 +46,68 @@ p {
 	font-size: 20px;
 	text-align: center;
 	font-family: "Courier New";
+	font-weight: bold;
 }
-
-
 
 #bio {
 	display: none;
 	position: absolute;
-    width:100%;
-    border:1px solid #d3d3d3;
+    width: 95%;
+    height: 425px;
+    left: 2%;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
 #resume {
 	display: none;
 	z-index: -1;
 	position: absolute;
-    width:100%;
-    border:1px solid #d3d3d3;
+    width: 95%;
+    height: 800px;
+    left: 2%;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
 #gym {
 	display: none;
 	position: absolute;
-    width:100%;
-    border:1px solid #d3d3d3;
+    width: 95%;
+    height: 1160px;
+    left: 2%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+#gym h3 {
+    font-family: "Arial Verdana";
 }
 
 #journalism {
 	display: none;
 	position: absolute;
-    width:100%;
-    border:1px solid #d3d3d3;
+    width: 95%;
+    height: 575px;
+    left: 2%;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
 #music {
 	display: none;
 	position: absolute;
-    width:100%;
-    border:1px solid #d3d3d3;
+    width: 95%;
+    height: 575px;
+    left: 2%;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
+#bio p {
+	width: 50%;
+}
 
+#resume table {
+	padding-left: 4%;
+}
