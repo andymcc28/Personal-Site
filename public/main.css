@@ -53,10 +53,16 @@ a:hover {
 	display: none;
 	position: absolute;
     width: 95%;
-    height: 425px;
+    height: 400px;
     left: 2%;
     border: 2px solid black;
     margin-bottom: 10px;
+}
+
+.bio-body {
+    width: 99%;
+    position: absolute;
+    left: 3%;
 }
 
 #resume {
@@ -68,6 +74,16 @@ a:hover {
     left: 2%;
     border: 2px solid black;
     margin-bottom: 10px;
+}
+
+.resume-body {
+    width: 95%;
+    position: absolute;
+    left: 2%;
+}
+
+#resume table {
+    padding-left: 4%;
 }
 
 #gym {
@@ -84,7 +100,7 @@ a:hover {
     font-family: "Arial Verdana";
 }
 
-.gym_indent {
+.gym_body {
     width: 99%;
     position: absolute;
     left: 3%;
@@ -110,10 +126,12 @@ a:hover {
     margin-bottom: 10px;
 }
 
-#bio p {
-	width: 50%;
+.music-body {
+    width: 99%;
+    position: absolute;
+    left: 3%;
 }
 
-#resume table {
-	padding-left: 4%;
+#bio p {
+	width: 50%;
 }
