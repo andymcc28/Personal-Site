@@ -84,6 +84,12 @@ a:hover {
     font-family: "Arial Verdana";
 }
 
+.gym_indent {
+    width: 99%;
+    position: absolute;
+    left: 3%;
+}
+
 #journalism {
 	display: none;
 	position: absolute;
