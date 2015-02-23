@@ -65,6 +65,14 @@ a:hover {
     left: 3%;
 }
 
+#bio img {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    width: 200px;
+    height: 300px;
+}
+
 #resume {
 	display: none;
 	z-index: -1;
